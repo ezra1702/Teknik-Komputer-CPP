@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tes"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 05:54:18 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDQ6MDk6MTIgQU07MjY5OQ=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTQ6MTggQU07MzsyODE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, max, min, avarage" type="Integer" array="False" size=""/>
+            <output expression="&quot;input nilai pertama : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;input nilai kedua : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;input nilai ketiga : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a &gt; b AND a &gt; c">
+                <then>
+                    <assign variable="max" expression="a"/>
+                </then>
+                <else>
+                    <if expression="b &gt; a AND b &gt; c">
+                        <then>
+                            <assign variable="max" expression="b"/>
+                        </then>
+                        <else>
+                            <if expression="c &gt; a AND c &gt; b">
+                                <then>
+                                    <assign variable="max" expression="c"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ada angka yang sama&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="a &lt; b AND a &lt; c">
+                <then>
+                    <assign variable="min" expression="a"/>
+                </then>
+                <else>
+                    <if expression="b &lt; a AND b &lt; c">
+                        <then>
+                            <assign variable="min" expression="b"/>
+                        </then>
+                        <else>
+                            <if expression="c &lt; a AND  c &lt; b">
+                                <then>
+                                    <assign variable="min" expression="c"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ada angka yang sama&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="avarage" expression="(a+b+c)/3"/>
+            <output expression="&quot;Angka terbesar : &quot;" newline="True"/>
+            <output expression="max" newline="True"/>
+            <output expression="&quot;Angka terkecil : &quot;" newline="True"/>
+            <output expression="min" newline="True"/>
+            <output expression="&quot;Rata - rata semuanya : &quot;" newline="True"/>
+            <output expression="avarage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

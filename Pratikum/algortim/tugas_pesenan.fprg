@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tugas_pesenan"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 08:31:45 PM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMjk7MTE6NTk6NTYgQU07MjcxOQ=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMjk7MDg6MzE6NDUgUE07MTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pesen, total, ng, qng, qmg, qsk, qth, mg, sk, th, ngoreng, mgoreng, eskrim, esteh, x" type="Integer" array="False" size=""/>
+            <assign variable="esteh" expression="0"/>
+            <assign variable="eskrim" expression="0"/>
+            <assign variable="mgoreng" expression="0"/>
+            <assign variable="ngoreng" expression="0"/>
+            <assign variable="th" expression="0"/>
+            <assign variable="sk" expression="0"/>
+            <assign variable="mg" expression="0"/>
+            <assign variable="qth" expression="0"/>
+            <assign variable="qsk" expression="0"/>
+            <assign variable="qmg" expression="0"/>
+            <assign variable="qng" expression="0"/>
+            <assign variable="ng" expression="0"/>
+            <assign variable="pesen" expression="0"/>
+            <assign variable="total" expression="0"/>
+            <assign variable="x" expression="0"/>
+            <output expression="&quot;Kau malas keluar karena ada olshop atau olshop ada karena kau malas keluar ?&quot;" newline="True"/>
+            <while expression="x = 0">
+                <output expression="&quot;Mau Pesen Apa ? &quot;" newline="True"/>
+                <output expression="&quot;1.Nasi Goreng (Rp.12.000) | 2.Mie Goreng (Rp.13.000) | 3. Es Teh (Rp.15.000) |  5.Es Krim (Rp.10.000)&quot;" newline="True"/>
+                <input variable="pesen"/>
+                <if expression="pesen == 1">
+                    <then>
+                        <assign variable="qng" expression="qng + 1"/>
+                        <assign variable="ng" expression="1"/>
+                        <assign variable="ngoreng" expression="ngoreng + 12000"/>
+                        <assign variable="total" expression="total + 12000"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="pesen == 2">
+                    <then>
+                        <assign variable="qmg" expression="qmg + 1"/>
+                        <assign variable="mg" expression="1"/>
+                        <assign variable="mgoreng" expression="mgoreng + 13000"/>
+                        <assign variable="total" expression="total + 13000"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="pesen == 3">
+                    <then>
+                        <assign variable="qsk" expression="qsk + 1"/>
+                        <assign variable="sk" expression="1"/>
+                        <assign variable="eskrim" expression="eskrim + 10000"/>
+                        <assign variable="total" expression="total + 10000"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="pesen == 4">
+                    <then>
+                        <assign variable="qth" expression="qth+ 1"/>
+                        <assign variable="th" expression="1"/>
+                        <assign variable="esteh" expression="esteh + 15000"/>
+                        <assign variable="total" expression="total + 15000"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="pesen == 0">
+                    <then>
+                        <if expression="ng = 1">
+                            <then>
+                                <output expression="&quot;anda memesan nasi goreng sebanyak : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga nasi goreng : &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="mg = 2">
+                            <then>
+                                <output expression="&quot;anda memesan mie goreng sebanyak : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga mie goreng : &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="sk == 3">
+                            <then>
+                                <output expression="&quot;anda memesan es krim sebanyak : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;total harga es krim : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="th == 4">
+                            <then>
+                                <output expression="&quot;anda memesan es teh sebanyak : &quot;" newline="True"/>
+                                <output expression="qth" newline="True"/>
+                                <output expression="&quot;total harga esteh : &quot; + esteh" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng == 1 &amp;&amp; mg == 1 &amp;&amp; sk == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi Goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Es Krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                                <output expression="&quot;Es Teh : &quot;" newline="True"/>
+                                <output expression="qth" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng  == 1 &amp;&amp; mg == 1 &amp;&amp; sk == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi Goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Mie Goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                                <output expression="&quot;Es Krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng  == 1 &amp;&amp; mg == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;nasi goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Mie goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga :&quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                                <output expression="&quot;Es Teh :&quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng == 1  &amp;&amp; sk == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;Total harga : &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Es Krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;Total harga : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                                <output expression="&quot;Es Teh : &quot;" newline="True"/>
+                                <output expression="qth" newline="True"/>
+                                <output expression="&quot;Total harga: &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="mg == 1  &amp;&amp; sk == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;mie goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                                <output expression="&quot;Es krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;Es krim : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                                <output expression="&quot;Es Teh : &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng == 1 &amp;&amp; mg == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;mie goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng == 1 &amp;&amp; sk == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Es krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;Total harga : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="ng == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Nasi goreng : &quot;" newline="True"/>
+                                <output expression="qng" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="ngoreng" newline="True"/>
+                                <output expression="&quot;Es Teh: &quot;" newline="True"/>
+                                <output expression="qth" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="mg == 1  &amp;&amp; sk == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Mie goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                                <output expression="&quot;Es Krim: &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="mg == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Mie goreng : &quot;" newline="True"/>
+                                <output expression="qmg" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="mgoreng" newline="True"/>
+                                <output expression="&quot;Es Teh: &quot;" newline="True"/>
+                                <output expression="qth" newline="True"/>
+                                <output expression="&quot;total harga: &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="sk == 1 &amp;&amp; th == 1">
+                            <then>
+                                <output expression="&quot;Anda memesan : &quot;" newline="True"/>
+                                <output expression="&quot;Es Krim : &quot;" newline="True"/>
+                                <output expression="qsk" newline="True"/>
+                                <output expression="&quot;total harga : &quot;" newline="True"/>
+                                <output expression="eskrim" newline="True"/>
+                                <output expression="&quot;Es Teh : &quot;" newline="True"/>
+                                <output expression="esteh" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <output expression="&quot;Harga total semua &quot;" newline="True"/>
+                        <output expression="total" newline="True"/>
+                        <output expression="&quot;Ini saja ? (Ya/Tidak)&quot;" newline="True"/>
+                        <declare name="ans" type="String" array="False" size=""/>
+                        <input variable="ans"/>
+                        <if expression="ans = &quot;Ya&quot;">
+                            <then>
+                                <output expression="&quot;Bayar Mau Pakai Apa ? &quot;" newline="True"/>
+                                <output expression="&quot;1.Tunai | 2.Debit&quot;" newline="True"/>
+                                <declare name="jwb" type="Integer" array="False" size=""/>
+                                <input variable="jwb"/>
+                                <if expression="jwb == 1">
+                                    <then>
+                                        <declare name="uang" type="Integer" array="False" size=""/>
+                                        <output expression="&quot;Berapa Uang Kamu ? &quot;" newline="True"/>
+                                        <input variable="uang"/>
+                                        <assign variable="uang" expression="uang - total"/>
+                                        <if expression="uang &lt; 0">
+                                            <then>
+                                                <output expression="&quot;Pembayaran dibabtalkan diakrenakan uang tidak cukup&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Pembayaran anda berhasil :) Selamat Menikmati &quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Masukan Nomor kartu anda : &quot;" newline="True"/>
+                                        <declare name="user" type="Integer" array="False" size=""/>
+                                        <input variable="user"/>
+                                        <output expression="&quot;Password anda : &quot;" newline="True"/>
+                                        <declare name="pss" type="Integer" array="False" size=""/>
+                                        <input variable="pss"/>
+                                        <output expression="&quot;Pembayaran anda berhasil :) Selamat Menikmati &quot;" newline="True"/>
+                                    </else>
+                                </if>
+                                <assign variable="x" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="akhir" type="Integer" variable="">
+        <parameters>
+            <parameter name="ng" type="Integer" array="False"/>
+            <parameter name="qng" type="Integer" array="False"/>
+            <parameter name="qmg" type="Integer" array="False"/>
+            <parameter name="qsk" type="Integer" array="False"/>
+            <parameter name="qth" type="Integer" array="False"/>
+            <parameter name="mg" type="Integer" array="False"/>
+            <parameter name="sk" type="Integer" array="False"/>
+            <parameter name="th" type="Integer" array="False"/>
+            <parameter name="ngoreng" type="Integer" array="False"/>
+            <parameter name="mgoreng" type="Integer" array="False"/>
+            <parameter name="eskrim" type="Integer" array="False"/>
+            <parameter name="esteh" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="loop" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>

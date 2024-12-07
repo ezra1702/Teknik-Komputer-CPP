@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+struct Mahasiswa{ //deklarasi struct dengan struct <nama variabel struct>
+	char nama[30]; //isi dari struct (disebut field)
+	char nim[15]; 
+	float nilai[3];
+};
+
+int main()
+{
+	Mahasiswa mw[3]; //Inisiasi untuk pengaksesan
+	int sum, avg;
+	cout << "Masukkan nama dan NIM" << endl;
+	cin >> mw.nama >> mw.nim; //variabel dalam struct dapat diakses dengan <nama variabel struct>.<nama field>
+	cout << "Masukkan tiga bilangan bulat sebagai nilai" << endl;
+	for (int i = 0;i<3;i++){
+		cin >> mw.nilai[i];
+	}
+	for (int i = 0;i<3;i++){
+		sum +=mw.nilai[i];
+	}
+	avg = sum/3;
+	cout << "Rata rata yang diperoleh adalah: "<<avg;
+	return 0;
+}

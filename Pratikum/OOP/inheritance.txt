@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+class Animal{ // Parent Class
+	protected:
+	string animalDeath = "Its dead :(\n";
+	public:
+    string alive = "Yes, its alive";	
+	void eat(){
+    cout << "This animal is eating\n";
+}
+};
+class Dog: public Animal { //Child Class
+	public:
+    void bark(){
+    cout << "The dog goes woof!\n";
+    }
+    void death(){
+    	cout << animalDeath;
+	}
+};
+
+class Cat: public Animal { //Child Class
+    public:
+    void meow(){
+    cout << "The cat goes meow!\n";
+    }
+};
+
+int main() {
+
+    Dog dog;
+    Cat cat;
+
+    cout << dog.alive << '\n';
+    dog.death();
+    dog.eat();
+    dog.bark();
+    cat.meow();
+
+    return 0;
+}

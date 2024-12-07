@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+struct Mahasiswa{ //deklarasi struct dengan struct <nama variabel struct>
+	char nama[30]; //isi dari struct (disebut field)
+	char nim[15]; 
+	float nilai[3];
+};
+
+int main()
+{
+	Mahasiswa mw[3]; //Inisiasi untuk pengaksesan
+	
+	strcpy(mw[0].nama, "Budiono"); //strcpy untuk mengisi datanya
+	strcpy(mw[0].nim, "1234567890");
+	
+	strcpy(mw[1].nama, "Salistiyana");
+	strcpy(mw[1].nim, "232323232323");
+	
+	strcpy(mw[2].nama, "Taryono");
+	strcpy(mw[2].nim, "000000000");
+	
+	cout << "Data Mahasiswa: "<<endl;
+	for (int i=0; i<3 ; i++){
+		cout << "Mahasiswa ke-"<<i+1<<endl;
+		cout<<"Nama: "<<mw[i].nama<<endl;
+		cout<<"NIM: "<<mw[i].nim<<endl;
+	}
+	return 0;
+}

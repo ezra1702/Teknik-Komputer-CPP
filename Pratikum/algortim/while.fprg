@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tes"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 04:42:45 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDQ6MDk6MTIgQU07MjY5OQ=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDQ6NDI6NDUgQU07NDsyODEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <for variable="a" start="0" end="3" direction="inc" step="1">
+                <for variable="b" start="0" end="a" direction="inc" step="1">
+                    <output expression="a" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

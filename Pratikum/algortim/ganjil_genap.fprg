@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ganjil_genap"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 05:59:01 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTc6MzAgQU07MjcwMw=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTk6MDEgQU07MTsyODEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan anggka : &quot;" newline="True"/>
+            <input variable="angka"/>
+            <if expression="angka % 2 == 0">
+                <then>
+                    <output expression="&quot;Ini Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ini Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="convert_jam_menit"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 06:05:57 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTk6MDQgQU07MjcwNg=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDY6MDU6NTcgQU07MTsyODE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="detik, jam, menit" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan berapa detik ? &quot;" newline="True"/>
+            <input variable="detik"/>
+            <assign variable="jam" expression="detik / 3600"/>
+            <assign variable="menit" expression="(detik % 3600) / 60"/>
+            <output expression="&quot;Maka saat ini jam : &quot;" newline="True"/>
+            <output expression="jam" newline="True"/>
+            <output expression="&quot;dan menit ke : &quot;" newline="True"/>
+            <output expression="menit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

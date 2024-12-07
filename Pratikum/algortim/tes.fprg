@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tes"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 04:38:33 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDQ6MDk6MTIgQU07MjY5OQ=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDQ6Mzg6MzMgQU07MjsyODEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <while expression="a &lt;= 3">
+                <output expression="&quot;*&quot;" newline="True"/>
+                <assign variable="a" expression="a + 1"/>
+            </while>
+            <output expression="&quot;Output selesai dijalankan&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

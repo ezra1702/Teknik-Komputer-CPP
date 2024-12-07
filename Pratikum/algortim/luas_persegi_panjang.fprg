@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="luas_persegi_panjang"/>
+        <attribute name="authors" value="EZZRA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-02 05:57:25 AM"/>
+        <attribute name="created" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTQ6MjEgQU07MjcwMA=="/>
+        <attribute name="edited" value="RVpaUkE7REVTS1RPUC1OMjQ4SENROzIwMjQtMDktMDI7MDU6NTc6MjUgQU07MTsyODE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, l" type="Integer" array="False" size=""/>
+            <output expression="&quot;Panjang persegi panjang : &quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;Lebar persegi panjang : &quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;Luas persegi panjang yaitu&quot;" newline="True"/>
+            <output expression="p * l" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,71 @@
+#include <stdlib.h>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+// Membuat/deklarasi class Mobil
+class Mobil {
+// Access modifier: public, private, protected
+public:   // Bisa diakses di luar Class
+    // Constructor, fungsi yang langsung dipanggil saat instansi class dibuat
+    Mobil(string x = "", string y = "", int z = 0) { // Constructor with parameters
+      brand = x;
+      model = y;
+      tahun = z;
+    }
+
+    void HapusField(){
+        brand = "";
+        model = "";
+        tahun = 0;
+    };
+
+    void Tampilkan(){
+        Print();
+    }
+
+private:    // Tidak bisa diakses di luar Class, hanya di dalam saja
+    string brand;   
+    string model;
+    int tahun;
+
+    void Print(){
+        cout << brand << " " << model << " " << tahun << "\n";
+    }
+
+};
+
+int main() {
+    // Buat instance baru dari class Car
+    Mobil mobil1("BMW", "X5", 1999); // Buat instance baru dari calss Car bernama carObj1
+
+    // Modifikasi variabel
+    // mobil1.brand = "BMW";
+    // mobil1.model = "X5";
+    // mobil1.tahun = 1999;
+
+    // Buat instance baru lagi dari class Car
+    Mobil mobil2("Ford", "Mustang", 1969);
+    // mobil2.brand = "Ford";
+    // mobil2.model = "Mustang";
+    // mobil2.tahun = 1969;
+
+    // Print
+
+    // cout << mobil1.brand << " " << mobil1.model << " " << mobil1.tahun << "\n";
+    // cout << mobil2.brand << " " << mobil2.model << " " << mobil2.tahun << "\n";
+
+    mobil1.Tampilkan();
+    mobil2.Tampilkan();
+    // mobil1.HapusField();
+
+    // cout << mobil1.brand << " " << mobil1.model << " " << mobil1.tahun << "\n";
+    
+    
+    
+    return 0;
+}

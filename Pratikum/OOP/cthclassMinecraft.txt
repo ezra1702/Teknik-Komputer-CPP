@@ -1,0 +1,60 @@
+#include <stdlib.h>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+
+// Misalnya buat entity mob2 di minecraft
+class Mob {
+public:
+    string namaMob;
+    int damage;
+
+    // Konstruktor
+    Mob(string a, int b, int c) {
+        namaMob = a;
+        hp = b;
+        damage = c;
+    }
+
+    void TerimaDmg(int dmg){
+        hp -= dmg;
+    }
+
+    void TampilkanStatus(){
+        cout << namaMob << endl;
+        cout << "HP: " << hp << endl;
+        cout << "Damage: " << damage << endl;
+        cout << endl;
+    }
+
+private: // Sebaiknya kalau ada var ga diubah2,
+         // taruh di private aja
+    int hp;
+
+};
+
+// Yang nyerang, yang diserang
+void Serang(Mob* a, Mob* b){    // pakai pointer, soalnya kalau ga, dia malah buat Mob baru
+    b->TerimaDmg(a->damage);    // kalau main pointer, dia pakai "->" bukan "."
+    cout << a->namaMob << " menyerang " <<
+        b->namaMob << "!" << endl << endl;
+}
+
+int main(){
+    Mob steve("Steve", 10, 1);
+    Mob creeper("Creeper", 3, 10);
+    
+    creeper.TampilkanStatus();
+    //creeper.TerimaDmg(5);
+    Serang(&steve, &creeper);   // Ngasih alamat dari instansi steve dan creeper
+    creeper.TampilkanStatus();
+    
+    return 0;
+}
+
+// NB Blum work soalnya harus pake pointer
